@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface domain="lollypop">
+  <!-- interface-requires lollywidgets 1.0 -->
   <!-- interface-requires gtk+ 3.10 -->
   <object class="GtkHeaderBar" id="header-bar">
     <property name="visible">True</property>

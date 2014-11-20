@@ -178,7 +178,7 @@ class AlbumWidgetSongs(Gtk.Grid):
 			ui = Gtk.Builder()
 			self._tracks_ui.append(ui)
 			ui.add_from_resource('/org/gnome/Lollypop/TrackWidget.ui')
-			track_widget = ui.get_object('eventbox1')
+			track_widget = ui.get_object('eventbox')
 			self._tracks.append(track_widget)
 			track_widget.playing = ui.get_object('image1')
 			track_widget.playing.set_alignment(1, 0.6)
@@ -254,7 +254,9 @@ class AlbumWidgetSongs(Gtk.Grid):
 		popover.show()
 
 
-
+"""
+	Let user select a directory
+"""
 class ChooserWidget(Gtk.Grid):
 	
 	def __init__(self):

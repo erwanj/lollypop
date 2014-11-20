@@ -33,6 +33,18 @@ PKG_CHECK_MODULES([GTK], [gtk+-3.0 >= 3.12])
 GLIB_COMPILE_RESOURCES=`$PKG_CONFIG --variable glib_compile_resources gio-2.0`
 AC_SUBST(GLIB_COMPILE_RESOURCES)
 
+PKG_CHECK_MODULES([GLADEUI],[gladeui-2.0],
+  [ac_gladeui_catdir=`$PKG_CONFIG --variable=catalogdir gladeui-2.0`],
+  [ac_gladeui_catdir=;])
+AC_SUBST(GLADEUI_CATDIR, $ac_gladeui_catdir)
+
+PKG_CHECK_MODULES([GLADEUI],[gladeui-2.0],
+  [ac_gladeui_moddir=`$PKG_CONFIG --variable=moduledir gladeui-2.0`],
+  [ac_gladeui_moddir=;])
+AC_SUBST(GLADEUI_MODDIR, $ac_gladeui_moddir)
+
+
+
 AC_CONFIG_FILES([
   Makefile
   data/Makefile

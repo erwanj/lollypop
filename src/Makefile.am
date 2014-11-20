@@ -25,3 +25,6 @@ app_PYTHON = \
 	popalbums.py\
 	collectionscanner.py
 
+
+glademodulesdir = $(GLADEUI_MODDIR)
+glademodules_PYTHON = lollywidgets.py

@@ -12,6 +12,7 @@ EXTRA_DIST = \
 
 CLEANFILES = \
 	$(bin_SCRIPTS)
+	$(modules_DATA) \
 	$(NULL)
 
 MAINTAINERCLEANFILES = \

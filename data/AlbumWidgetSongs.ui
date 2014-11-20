@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <!-- interface-requires gtk+ 3.6 -->
+  <!-- interface-requires lollywidgets 1.0 -->
   <object class="GtkGrid" id="AlbumWidgetSongs">
     <property name="visible">True</property>
         <property name="margin">15</property>
     <property name="can_focus">False</property>
     <child>
- 	<object class="GtkEventBox" id="eventbox">
+ 	<object class="LollyEventBox" id="eventbox">
         <property name="visible">True</property>
         <child>
 	      <object class="GtkImage" id="cover">

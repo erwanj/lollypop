@@ -8,6 +8,9 @@ resource_DATA = lollypop.gresource
 appsdir = $(datadir)/applications
 apps_DATA = lollypop.desktop
 
+catalogsdir = $(GLADEUI_CATDIR)
+catalogs_DATA = lollywidgets.xml
+
 @INTLTOOL_DESKTOP_RULE@
 
 appdatadir = $(datadir)/appdata
@@ -92,6 +95,7 @@ CLEANFILES = \
 	lollypop.gresource \
 	lollypop.appdata.xml \
 	$(apps_DATA) \
+	$(catalogs_DATA) \
 	*.valid \
 	gschemas.compiled \
 	$(NULL)
