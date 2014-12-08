@@ -286,7 +286,7 @@ Full-Width Styles
 }
 
 #logo {
-  display:block;
+  display: inline;
   position: absolute;
   top: 0;
 }
