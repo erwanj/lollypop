@@ -259,7 +259,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 940px;
+  max-width: 640px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -281,7 +281,7 @@ Full-Width Styles
 #logo {
   position: relative;
   float: left;
-  margin-left:100px;
+  margin-left:150px;
 }
 
 #forkme_banner {
