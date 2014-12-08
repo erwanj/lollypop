@@ -12,22 +12,6 @@
   </head>
 
   <body>
-    <script>
-	// Check if a new cache is available on page load.
-	window.addEventListener('load', function(e) {
-
-	window.applicationCache.addEventListener('updateready', function(e) {
-	if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-	// Browser downloaded a new app cache.
-	// Swap it in and reload the page to get the new hotness.
-	window.applicationCache.swapCache();
-    } else {
-      // Manifest didn't changed. Nothing new to server.
-    }
-  }, false);
-
-}, false);
-    </script>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -46,7 +30,7 @@
 <h2>
 <a id="lollypop-is-a-new-gnome-music-playing-application" class="anchor" href="#lollypop-is-a-new-gnome-music-playing-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lollypop is a GNOME music player.</h2>
 
-<p>It prvides:</p>
+<p>It provides:</p>
 
 <ul>
 <li> mp3/4, ogg and flac.</li>
